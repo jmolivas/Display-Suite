@@ -7,7 +7,7 @@
 	<link rel="apple-touch-icon" href="resources/images/icon@2x.png"/>
 	<link rel="apple-touch-startup-image" href="resources/images/splash.png" />
 
-	<title>Hackear tpl es cosa del pasado: bienvenido a display suite, control de plantillas drag&drop</title>
+	<title>Display Suite & Context</title>
 
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Bitter:400&amp;subset=latin" media="all" />
 	<link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
@@ -23,10 +23,13 @@
 <body>
 	<div class="kinout">
 		<section>
-			<h1>Display Suite</h1>
+			<h1>Display Suite & Context</h1>
 		</section>
 		<section>
-			<h2>Hackear tpl es cosa del pasado: bienvenido a display suite, control de plantillas drag&drop</h2>
+			<p>
+				<br/>
+				<h2>Hackear tpl es cosa del pasado: bienvenido a display suite, control de plantillas drag&drop</h2>
+			</p>
 			<br/>
 			<h4>Drupal Summit Latino, Guadalajara 2012</h4>
 		</section>
@@ -39,17 +42,66 @@
 				</p>
 				<p class="vertical">Mi nombre es Jesús Manuel Olivas</p>
 				<p class="vertical">Me pueden encontrar en twitter como <strong>@jmolivas</strong><br/>
-				En mi blog <mark>http://jmolivas.com</mark></p>
+				En mi blog http://jmolivas.com</p>
 			</article>
 		</section>
 
 		<section>
 			<h3><mark>Acerca de mí</mark></h3>
 			<article>
-				<p class="vertical small">Relativamente nuevo en Drupal aproximadamente 2 años de experiencia trabajando con este framework.</p>
+				<p class="vertical">Relativamente nuevo en Drupal aproximadamente 2 años de experiencia trabajando con este framework.</p>
 				<p class="vertical">Tengo ese mismo tiempo programando con PHP y con symfony2 en fechas recientes.</p>
 			</article>
-		</section>		
+		</section>	
+		
+		<section>
+			<h2>Estoy en la charla correcta</h2>
+			<article>
+			<p class="left small">Trabajas con Drupal y alguna vez se presento la necesidad de : <br/><p>
+			<ul>	
+				<li class="left small">
+				Crear o modificar alguna plantilla archivo tpl (node.tpl.php, node-article.tpl.php o node-1.tpl.php) para personalizar como se muestran en un nodo ciertos campos, componentes, otros módulos, comentarios, etc...<br/><br/></li>
+				<li class="left small">Modificar la distribución de bloques o activar/desactivar estos dependiendo de la sección, vista, tipo de contenido o enlace consultado, ya sea utilizando la opción por defecto de los bloques o escribiendo código php.</li>
+			</ul>
+			</article>
+		</section>
+
+		<section>
+			<h2> Display Suite </h2>
+			<h3>¿Que puede hacer Display Suite por mí ?</h3>
+			<article>
+				<p class="left small">Display Suite permite controlar como los contenidos o campos de las entidades son desplegados utilizando una interfaz drag & drop. Sin la necesidad de crear o modificar archivos tpl.</p>
+				<p class="left small">Por defecto Display suite incluye vistas o modos predefinidos para mostrar los datos (Teaser, Full, RSS). Agregando nuevos View Modes es la manera de definir como las diferentes piezas de contenido o campos son mostradas en Teaser, Full ó Views</p>
+				<code>http://drupal.org/project/ds</code>
+			</article>
+		</section>
+
+		<section>
+			<h2> Características </h2>
+			<article>
+				<ul>
+					<li class="left small">Agregar diferentes formatos por entidad (node, user, taxonomy)</li>
+					<li class="left small">Agregar nuevos campos utilizando tokens o codigo PHP.</li>
+					<li class="left small">Agregar bloques.</li>					
+					<li class="left small">Opción de modificar etiquetas.</li>
+					<li class="left small">Agregar o reemplazar la configuración de estilos de campo (campos semánticos)</li>
+					<li class="left small">Integración con vistas y paneles.</li>
+					<li class="left small">Integración con WebForm.</li>
+					<li class="left small">Activando el Modulo Extras : Ocultar titulo, aplicar formato "View Mode" directamente a nivel de contenido.<br/><br/></li>
+					<li class="left small">Requiere CTools.</li>
+				</ul>
+			</article>
+		</section>	
+		
+		<section>
+			<h2> Context </h2>
+			<h3>¿Que puede hacer Context por mí ?</h3>
+			<article>
+				<p class="left small">Context permite manejar condiciones contextuales y definir las reacciones que tendrán diferentes partes del sitio. Pensemos en cada contexto como representación de una "sección o página" dentro del sitio.</p>
+				<p class="left small">Para cada contexto, se definen las condiciones  contextuales basadas en URL, Tipo de Contenido, Taxonomía, Lenguaje entre otros que lo invocan, además de definir las diferentes reacciones por ejemplo (asignar contenido en bloques) en el contexto activo.</p>
+				<code>http://drupal.org/project/context</code>
+			</article>
+		</section>	
 
 	</div>
 
