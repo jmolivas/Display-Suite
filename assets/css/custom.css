@@ -9,4 +9,8 @@ h4{font-size:1.0em;}
 .left { text-align: left; }
 ul { list-style-type: disc; width:100%; padding-left:15px; padding-right:15px; }
 li { width:100%; }
-code{ font-size:0.75em; color: #333333; background-color:#fff; padding: .5em; width:100%; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; box-shadow:         1px 1px 2px rgba(50, 50, 50, 0.75); }
+code{ font-size:0.75em; color: #333333; background-color:#fff; padding: .5em; width:100%; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; box-shadow: 1px 1px 2px rgba(50, 50, 50, 0.75); }
+.image-shadow {
+	-webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; box-shadow: 1px 1px 2px rgba(50, 50, 50, 0.75);
+}
+.title { padding-top: 20px; }
