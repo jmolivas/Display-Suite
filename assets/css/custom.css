@@ -3,13 +3,17 @@ h1, h2, h3, h4 , h5, h6 { font-family: "Bitter"; font-weight:normal; line-height
 
 h1{font-size:2.5em;}
 h2{font-size:1.5em;}
+h2.medium {font-size:1.35em;}
+h2.small {font-size:1.35em;}
 h3{font-size:1.25em;}
 h4{font-size:1.0em;}
+p { width:100%; }
 .small { font-size:0.75em; line-height:150%; }
 .left { text-align: left; }
 ul { list-style-type: disc; width:100%; padding-left:15px; padding-right:15px; }
-li { width:100%; }
-code{ font-size:0.75em; color: #333333; background-color:#fff; padding: .5em; width:100%; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; box-shadow: 1px 1px 2px rgba(50, 50, 50, 0.75); }
+li { width:100%; padding-bottom: 10px; }
+code{ font-size:0.75em; color: #333333; background-color:#fff; padding: .5em; width:100%; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; box-shadow: 1px 1px 2px rgba(50, 50, 50, 0.75); float: left;}
+pre { background-color:#ffffff; }
 .image-shadow {
 	-webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; box-shadow: 1px 1px 2px rgba(50, 50, 50, 0.75);
 }

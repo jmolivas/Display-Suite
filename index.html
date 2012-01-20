@@ -7,7 +7,7 @@
 	<link rel="apple-touch-icon" href="resources/images/icon@2x.png"/>
 	<link rel="apple-touch-startup-image" href="resources/images/splash.png" />
 
-	<title>Display Suite & Context</title>
+	<title>Display Suite</title>
 
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Bitter:400&amp;subset=latin" media="all" />
 	<link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
@@ -23,7 +23,7 @@
 <body>
 	<div class="kinout">
 		<section>
-			<h1>Display Suite & Context</h1>
+			<h1>Display Suite</h1>
 		</section>
 		<section>
 			<p>
@@ -47,7 +47,7 @@
 		</section>
 
 		<section>
-			<h3><mark>Acerca de mí</mark></h3>
+			<h2>Algo más...</h2>
 			<article>
 				<p class="vertical">Relativamente nuevo en Drupal aproximadamente 2 años de experiencia trabajando con este framework.</p>
 				<p class="vertical">Tengo ese mismo tiempo programando con PHP y con symfony2 en fechas recientes.</p>
@@ -55,25 +55,25 @@
 				<p class="vertical">@hechoendrupal  <br/> http://hechoendrupal.com</p>
 			</article>
 		</section>	
-		
+		<!--
 		<section>
 			<h2>Estoy en la charla correcta</h2>
 			<article>
 			<p class="left small">Trabajas con Drupal y alguna vez se presento la necesidad de : <br/><p>
 			<ul>	
 				<li class="left small">
-				Crear o modificar alguna plantilla archivo tpl (node.tpl.php, node-article.tpl.php o node-1.tpl.php) para personalizar como se muestran en un nodo ciertos campos, componentes, otros módulos, comentarios, etc...<br/><br/></li>
-				<li class="left small">Modificar la distribución de bloques o activar/desactivar estos dependiendo de la sección, vista, tipo de contenido o enlace consultado, ya sea utilizando la opción por defecto de los bloques o escribiendo código php.</li>
+				Crear o modificar alguna plantilla archivo tpl (node.tpl.php, node-article.tpl.php o node-1.tpl.php) para personalizar como se muestran en un nodo los campos, agregar campos basados en otros módulos, etc...</li>
+				<li class="left small">Modificar o simplificar la salida html de los campos.</li>
+				<li class="left small">Agregar campos basados en código php, tokens ó bloques en el area de contenido para un nodo.</li> 
 			</ul>
 			</article>
 		</section>
-
+		-->
 		<section>
-			<h2> Display Suite </h2>
-			<h3>¿Que puede hacer Display Suite por mí ?</h3>
+			<h2 class="small">¿Que puede hacer Display Suite por mí ?</h2>
 			<article>
 				<p class="left small">Display Suite permite controlar como los contenidos o campos de las entidades son desplegados utilizando una interfaz drag & drop. Sin la necesidad de crear o modificar archivos tpl.</p>
-				<p class="left small">Por defecto Display suite incluye vistas o modos predefinidos para mostrar los datos (Teaser, Full, RSS). Agregando nuevos View Modes es la manera de definir como las diferentes piezas de contenido o campos son mostradas en Teaser, Full ó Views</p>
+				<p class="left small">Por defecto Display suite incluye vistas o modos predefinidos para mostrar los datos (Teaser, Full, RSS) llamados "View Modes". Modificando o agregando estos y asignando campos en las regiones, es que logramos controlar como las diferentes piezas de contenido o campos son mostradas en estos "View Modes" los cuales pueden ser consumudos por el modulo "Views"<br/><br/></p>				
 				<code>http://drupal.org/project/ds</code>
 			</article>
 		</section>
@@ -82,22 +82,26 @@
 			<h2> Características </h2>
 			<article>
 				<ul>
-					<li class="left small">Agregar diferentes formatos por entidad (node, user, taxonomy)</li>
-									
-					<li class="left small">Opción de modificar etiquetas.</li>
-					<li class="left small">Agregar o reemplazar la configuración de estilos de campo (campos semánticos)</li>
-					<li class="left small">Agregar nuevos campos utilizando tokens o codigo PHP.</li>
-					<li class="left small">Agregar bloques.</li>	
-					<li class="left small">Integración con "Views".</li>
-					<li class="left small">Integración con "WebForm".</li>
-					<li class="left small">Activando el modulo "Extras" : Ocultar titulo, aplicar formato "View Mode" directamente a nivel de contenido.<br/><br/></li>
-					<li class="left small">Requiere CTools.</li>
+				<li class="left small">Agregar diferentes "View Modes" por entidad (node, user, taxonomy).</li>					
+				<li class="left small">Opción de ocultar ó modificar etiquetas.</li>
+				<li class="left small">Agregar nuevos campos utilizando tokens o código PHP.</li>
+								
+				<li class="left small">Activando el modulo "Extras" : </li>
+				<ul>
+					<li class="left small">Ocultar titulo, aplicar formato "View Mode" directamente a nivel de contenido.</li>
+					<li class="left small">Modificar, simplificar la salida de HTML en campos.</li>
+					<li class="left small">Agregar bloques dentro del la region de contenido.</li>
+					<li class="left small">Campos adicionales basado en otros módulos.</li>
+					<li class="left small">Mostrar datos de nodo en un bloque.</li>
+				</ul>
+				<li class="left small">Integración con modulo "Views" y "WebForm".</li>
+				<!--<li class="left small">Requiere CTools.</li>-->
 				</ul>
 			</article>
 		</section>
 
 		<section>
-			<h3 class="title"> Adminstración de "Display Suite" </h3>
+			<h2 > Adminstración de "Display Suite" </h2>
 			<article>
 				<p class="vertical">
 					admin/structure/ds
@@ -107,7 +111,7 @@
 		</section>
 
 		<section>
-			<h3 class="title"> "View Mode" disponibles para entidad "Node-Article" </h3>
+			<h2 class="medium"> "View Mode" disponibles para entidad "Node-Article" </h2>
 			<article>
 				<p class="vertical">
 					<img src="assets/images/custom-display-settings.png" class="bordered center image-shadow">
@@ -116,7 +120,7 @@
 		</section>
 
 		<section>
-			<h3 class="title"> Agregar "View Mode" para entidad tipo "Node"</h3>
+			<h2> Agregar "View Mode" para entidad tipo "Node"</h2>
 			<article>
 				<p class="vertical">
 					<img src="assets/images/add-view-mode.png" class="bordered center image-shadow">
@@ -125,41 +129,119 @@
 		</section>	
 			
 		<section>
-			<h3 class="title"> "View Mode" entidad "Node-Article" </h3>
+			<h2> "View Mode" entidad "Node-Article" </h2>
 			<article>
 				<p class="vertical">
-					<img src="assets/images/view-mode-fields.png" class="bordered center image-shadow">
+					<img src="assets/images/view-mode-entity.png" class="bordered center image-shadow">
 				</p>
 			</article>
-		</section>			
+		</section>
 
 		<section>
-			<h3 class="title"> Opción de modificar etiquetas </h3>
+			<h2> Opción de modificar etiquetas </h2>
 			<article>
 				<p class="vertical">
 					<img src="assets/images/view-mode-field-labels.png" class="bordered center image-shadow">
 				</p>
+				<p class="left small">En esta pantalla es posible:</p>
+				<ul>
+					<li class="left small">Modificar el valor pre-establecido de la etiqueta.</li>
+					<li class="left small">Definir si la etiqueta se mostrará o estará oculta.</li>
+					<li class="left small">Establecer si la etiqueta se mostrará a un costado o sobre el valor del campo.</li>
+				</ul>
 			</article>
 		</section>
 		
 		<section>
-			<h3 class="title"> Configuración de estilos de campo (campos semánticos) </h3>
+			<h2>Selección de estilos/plantilla de campo</h2>
 			<article>
 				<p class="vertical">
-					<img src="assets/images/view-mode-field.png" class="bordered center image-shadow">
+					<img src="assets/images/view-mode-field-semantic.png" class="bordered center image-shadow">
+				</p>
+				<p class="left small">Definir salida HTML de campo:</p>
+				<ul>
+					<li class="left small">Default: Salida por defecto.</li>
+					<li class="left small">Full Reset: Elimina todo el markup HTML es decir elimina la *divitis o *divception.</li>
+					<li class="left small">Minimal: Elimina la mayor marte del markup dejando un contener sencillo.</li>
+					<li class="left small">Expert: Permite definir el markup que utilizará el campo.</li>
+				</ul>
+
+			</article>
+		</section>
+
+		<section>
+			<h2 class="small"> Configuración de plantilla Expert (ninja) </h2>
+			<article>
+				<p class="vertical">
+					<img src="assets/images/view-mode-field-semantic-2.png" class="bordered center image-shadow">
+				</p>
+				<p class="left small">Permite establecer manualmente tipo de elemento y asignar clases para cada uno de los diferentes elementos HTML contenedores de el campo.</p>
+			</article>
+		</section>
+
+		<section>
+			<h2> Configuración salida HTML para campo </h2>
+			<article>
+				<p class="vertical">
+					<img src="assets/images/view-mode-field-semantic-3.png" class="bordered center image-shadow">
+				</p>
+				<p class="left small">Permite establecer manualmente tipo de elemento y clases para campo.</p>
+				<p class="left small">Permite establecer caracterísiticas adicionales particulares por tipo de campo.</p>
+			</article>
+		</section>
+
+		<section>
+			<h2> Extras: Plantilla de campo </h2>
+			<article>
+				<p class="vertical">
+					<img src="assets/images/extras-field-template.png" class="bordered center image-shadow">
+				</p>
+				<p class="left small">Activar opción de plantilla de campo y establecer la plantilla por defecto.</p>
+			</article>
+		</section>
+
+		<section>
+			<h2 class="medium"> Extras: Campos adicionales (No Field-UI) </h2>
+			<article>
+				<p class="vertical">
+					<img src="assets/images/extras-extra-fields.png" class="bordered center image-shadow">
+				</p>
+				<p class="left small">Agregar campos a mostrar en region de contenido campos que se generan por medio de otros modulos (disqus,tweetbutton,facebookshare,google_plusone).</p>
+			</article>
+		</section>
+
+		<section>
+			<h2 class="medium"> Extras: Otros</h2>
+			<article>
+				<p class="vertical">
+					<img src="assets/images/extras-other.png" class="bordered center image-shadow">
+				</p>
+				<p class="left small">Asignar "View Mode" directamente a nivel de nodo, enlaces contextuales, opciones para titulo.</p>
+			</article>
+		</section>
+
+		<section>
+			<h2 class="medium">Integración con "Views"</h2>
+			<article>
+				<p class="vertical">
+					<img src="assets/images/views-integration.png" class="bordered center image-shadow">
 				</p>
 			</article>
 		</section>
 
 		<section>
-			<h3 class="title"> Configuración de estilos de campo (campos semánticos) </h3>
+			<h2 class="medium"> Demostración </h2>
 			<article>
+				<h3>Gracias</h3>
 				<p class="vertical">
-					<img src="assets/images/view-mode-field-semantic.png" class="bordered center image-shadow">
+					<img src="assets/images/real-me-blog.jpg" class="bordered center image-shadow">
 				</p>
+				<p>Drupal Summit Latino, Guadalajara 2012</p>
+				<p class="vertical">Jesús Manuel Olivas | @jmolivas | http://jmolivas.com</p>
 			</article>
 		</section>
 
+		<!--
 		<section>
 			<h2> Context </h2>
 			<h3>¿Que puede hacer Context por mí ?</h3>
@@ -169,7 +251,7 @@
 				<code>http://drupal.org/project/context</code>
 			</article>
 		</section>
-
+		-->
 	</div>
 
 	<script src="kinout/javascripts/Kinout.js"></script>
